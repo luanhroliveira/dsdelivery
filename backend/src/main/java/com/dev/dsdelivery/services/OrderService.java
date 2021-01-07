@@ -33,7 +33,6 @@ public class OrderService {
 
 	@Transactional(readOnly = true)
 	public OrderDTO insert(OrderDTO dto) {
-
 		Order order = new Order(null, dto.getAddress(), dto.getLatitude(), dto.getLongitude(), Instant.now(),
 				OrderStatus.PENDING);
 
@@ -44,5 +43,14 @@ public class OrderService {
 		order = repository.save(order);
 
 		return new OrderDTO(order);
-	}	
+	}
+
+	@Transactional(readOnly = true)
+	public OrderDTO setDelivered(Long id) {
+		Order order = repository.getOne(id);
+		order.setStatus(OrderStatus.DELIVERED);
+		order = repository.save(order);
+
+		return new OrderDTO(order);
+	}
 }

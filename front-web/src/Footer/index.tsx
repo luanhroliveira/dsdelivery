@@ -11,20 +11,16 @@ function Footer() {
             <div className="footer-icons">
                 <a href="https://www.youtube.com/c/DevSuperior" target="_new">
                     <YouTubeIcon />
-
                 </a>
 
                 <a href="https://linkedin.com/school/devsuperior/" target="_new">
                     <LinkedInIcon />
-
                 </a>
 
                 <a href="https://instagram.com/devsuperior.ig/" target="_new">
                     <InstagramIcon />
-
                 </a>
             </div>
-
         </footer>
     )
 }

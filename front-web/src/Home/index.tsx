@@ -1,5 +1,5 @@
-import '.styles.css';
-import { ReactComponent as Logo } from '.logo.svg';
+import './styles.css';
+import { ReactComponent as MainImage } from './Imagem.svg';
 
 function Home() {
     return (
@@ -7,11 +7,16 @@ function Home() {
             <div className="home-content">
                 <div className="home-actions">
                     <h1 className="home-title">
-                        Faça seu pedido <br /> que entregamos <br />
+                        Faça seu pedido
+                         <br />
+                         que entregamos
+                         <br />
+
                         pra você!!!
                     </h1>
                     <h3 className="home-subtitle">
-                        Escolha o seu pedido e em poucos minutos <br />
+                        Escolha o seu pedido e em poucos minutos
+                        <br />
                         levaremos na sua porta
                     </h3>
                     <a href="orders" className="home-btn-order">
@@ -19,7 +24,7 @@ function Home() {
                     </a>
                 </div>
                 <div className="home-image">
-
+                    <MainImage />
                 </div>
             </div>
         </div>
